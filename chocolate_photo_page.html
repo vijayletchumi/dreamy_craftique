@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamy Chocolate Box Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('choco8.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 20px;
+      color: #4b2e2e;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 42px;
+      text-shadow: 2px 2px 8px #3e1f0f;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: rgba(255, 250, 240, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 15px;
+      width: 280px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    .photo-card img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .photo-card p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #5c4033;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .lightbox .controls {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .lightbox button {
+      background: #8b4513;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .thumbnail-row {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .thumbnail-row img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      object-fit: cover;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .thumbnail-row img:hover {
+      border-color: #8b4513;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 18px;
+      color: #fff0e0;
+      text-shadow: 1px 1px 4px #5c4033;
+    }
+  </style>
+</head>
+<body>
+
+    Nutty Delight Box,Golden Crunch Dreams,Cocoa Nut Cravings,NutKiss Collection,Dreamy Fusion,Caramel Nut Fantasy,Hearty Bites Box,Toffee Temptations,ChocoNuts Bliss,Crunchy Love Box
+
+  <h1>🍫 Dreamy Chocolate Box Gallery 🍫</h1>
+
+  <div class="gallery">
+    <!-- Chocolate Box 1 -->
+    <div class="photo-card" onclick="openGallery(0)">
+      <div class="thumbnail-row">
+        <img src="choco1_1.jpg" onclick="event.stopPropagation(); openGallery(0, 0)">
+        <img src="choco1_2.jpg" onclick="event.stopPropagation(); openGallery(0, 1)">
+        <img src="choco1_3.jpg" onclick="event.stopPropagation(); openGallery(0, 2)">
+      </div>
+      <img src="choco1_1.jpg" alt="Classic Choco Love">
+      <p>
+        <strong style="color: #8b0000; font-size: 18px;">💝 Classic Choco Love – RM45</strong><br><br>
+        🍫 3 KitKat + 1 Hershey’s + 1 Hershey’s Kisses<br>
+        🔑 Cute Keychain<br>
+        💌 Free Personalized Wish Card<br>
+        📸 Photo can be added upon request<br>
+        💡 Light not included (can be added upon request 😊)<br>
+        ✨ Fully customizable to your choice<br>
+      
+
+      </p>
+    </div>
+
+    <!-- Chocolate Box 2 -->
+    <div class="photo-card" onclick="openGallery(1)">
+      <div class="thumbnail-row">
+        <img src="choco2_1.jpg" onclick="event.stopPropagation(); openGallery(1, 0)">
+        <img src="choco2_2.jpg" onclick="event.stopPropagation(); openGallery(1, 1)">
+        <img src="choco2_3.jpg" onclick="event.stopPropagation(); openGallery(1, 2)">
+      </div>
+      <img src="choco2_1.jpg" alt="Nutty Delight Box">
+      <p>
+        <strong style="color: #8b0000;">Price RM55 🍫</strong><br>
+        🥜 Nutty & Creamy Mix<br>
+        💝 Decorative Dreamy Box<br>
+        ✍️ Note Customization Available<br>
+        🎉 Surprise someone today!
+      </p>
+    </div>
+
+    <!-- Chocolate Box 2 -->
+    <div class="photo-card" onclick="openGallery(1)">
+        <div class="thumbnail-row">
+          <img src="choco2_1.jpg" onclick="event.stopPropagation(); openGallery(1, 0)">
+          <img src="choco2_2.jpg" onclick="event.stopPropagation(); openGallery(1, 1)">
+          <img src="choco2_3.jpg" onclick="event.stopPropagation(); openGallery(1, 2)">
+        </div>
+        <img src="choco2_1.jpg" alt="Nutty Delight Box">
+        <p>
+          <strong style="color: #8b0000;">Price RM55 🍫</strong><br>
+          🥜 Nutty & Creamy Mix<br>
+          💝 Decorative Dreamy Box<br>
+          ✍️ Note Customization Available<br>
+          🎉 Surprise someone today!
+        </p>
+      </div>
+
+      
+      <!-- Chocolate Box 2 -->
+    <div class="photo-card" onclick="openGallery(1)">
+        <div class="thumbnail-row">
+          <img src="choco2_1.jpg" onclick="event.stopPropagation(); openGallery(1, 0)">
+          <img src="choco2_2.jpg" onclick="event.stopPropagation(); openGallery(1, 1)">
+          <img src="choco2_3.jpg" onclick="event.stopPropagation(); openGallery(1, 2)">
+        </div>
+        <img src="choco2_1.jpg" alt="Nutty Delight Box">
+        <p>
+          <strong style="color: #8b0000;">Price RM55 🍫</strong><br>
+          🥜 Nutty & Creamy Mix<br>
+          💝 Decorative Dreamy Box<br>
+          ✍️ Note Customization Available<br>
+          🎉 Surprise someone today!
+        </p>
+      </div>
+  
+
+    <!-- More boxes can be added the same way -->
+  </div>
+
+  <div class="footer">
+    ✨ Crafted with sweetness & dreams – Dreamy Craftique ✨
+  </div>
+
+  <script>
+    const galleryImages = [
+      ["choco1_1.jpg", "choco1_2.jpg", "choco1_3.jpg"],
+      ["choco2_1.jpg", "choco2_2.jpg", "choco2_3.jpg"]
+    ];
+
+    function openGallery(boxIndex, imgIndex = 0) {
+      let lightbox = document.createElement("div");
+      lightbox.className = "lightbox";
+      lightbox.style.display = "flex";
+
+      const img = document.createElement("img");
+      img.src = galleryImages[boxIndex][imgIndex];
+
+      const controls = document.createElement("div");
+      controls.className = "controls";
+
+      const closeBtn = document.createElement("button");
+      closeBtn.innerText = "Close";
+      closeBtn.onclick = () => document.body.removeChild(lightbox);
+
+      controls.appendChild(closeBtn);
+      lightbox.appendChild(img);
+      lightbox.appendChild(controls);
+
+      lightbox.onclick = () => document.body.removeChild(lightbox);
+      img.onclick = e => e.stopPropagation();
+      controls.onclick = e => e.stopPropagation();
+
+      document.body.appendChild(lightbox);
+    }
+  </script>
+</body>
+</html>
