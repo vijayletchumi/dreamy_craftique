@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Explosion Box Gallery</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fff0f5; /* Soft Pink */
+      background: #fff0f5;
       margin: 0;
       padding: 20px;
     }
 
     h1 {
       text-align: center;
-      color: #ff69b4; /* Soft Pink */
+      color: #ff69b4;
       font-size: 36px;
       margin-bottom: 20px;
     }
@@ -103,6 +103,8 @@
       cursor: pointer;
     }
 
+
+
     .thumbnail-row img:hover {
       border-color: #ff69b4;
     }
@@ -111,53 +113,86 @@
       text-align: center;
       margin-top: 30px;
       font-size: 18px;
-      color: #b76e79; /* Rose Gold */
+      color: #b76e79;
     }
+
+    .pink-back-button {
+    background: linear-gradient(45deg, #ff6a88, #ff99ac);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .pink-back-button:hover {
+    background: linear-gradient(45deg, #ff99ac, #ff6a88);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.8);
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  .pink-back-button:active {
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
+  }
+
+    
   </style>
 </head>
 <body>
 
-  <h1>✨ Explosion Box Gallery ✨</h1>
+
+  
+  
+  <h1>✨ Explosion Box ✨</h1>
 
   <div class="gallery">
-    <!-- Surprise Spark Box - red glitter -->
+    <!-- Box 1 -->
     <div class="photo-card" onclick="openGallery(0)">
       <div class="thumbnail-row">
         <img src="Box_Type1_1.jpg" onclick="event.stopPropagation(); openGallery(0, 0)">
-        <img src="Box_Type1_1.jpg" onclick="event.stopPropagation(); openGallery(0, 1)">
-        <img src="Box_Type1_1.jpg" onclick="event.stopPropagation(); openGallery(0, 2)">
+        <img src="Box_Type1_2.jpg" onclick="event.stopPropagation(); openGallery(0, 1)">
+        <img src="Box_Type1_3.jpg" onclick="event.stopPropagation(); openGallery(0, 2)">
+        <img src="Box_Type1_4.jpg" onclick="event.stopPropagation(); openGallery(0, 3)">
+        <img src="Box_Type1_6.jpg" onclick="event.stopPropagation(); openGallery(0, 4)">
       </div>
-      <img src="Box_Type1_1.jpg" alt="Surprise Spark Box">
-      <p>
-        <strong style="color: #ff69b4;">Price RM85 ☺️</strong><br>
-        <span style="color: #1e90ff;">📸 16 Photos or Messages</span><br>
-        <span style="color: #32cd32;">🎁 2-Layer Explosion Box</span><br>
-        <span style="color: #ff8c00;">🎨 Colour Theme of Your Choice</span><br>
-        <span style="color: #800080;">🎉 Ideal for romantic surprises or special occasions</span><br>
-      </p>
+      <img src="Box_Type1_1.jpg" alt="Elegant Romance Box">
+      <div style="text-align: center;">
+        <strong style="color:#e2a9b5; font-size: 18px;">Elegant Romance Box | RM85</strong><br><br>
+      </div>
+      <span style="color: #555555; font-size: 16px;">📸 16 Photos or Messages</span><br>
+      <span style="color: #555555; font-size: 16px;">🎁 2-Layer Explosion Box</span><br>
+      <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+      <span style="color: #555555; font-size: 16px;">🎉 Perfect for Romantic Surprises or Special Occasions</span>
     </div>
 
-    <!-- Moments that Bloom - red and blue explosion box -->
+    <!-- Box 2 -->
     <div class="photo-card" onclick="openGallery(1)">
       <div class="thumbnail-row">
         <img src="Box_Type2_1.jpg" onclick="event.stopPropagation(); openGallery(1, 0)">
         <img src="Box_Type2_2.jpg" onclick="event.stopPropagation(); openGallery(1, 1)">
         <img src="Box_Type2_3.jpg" onclick="event.stopPropagation(); openGallery(1, 2)">
         <img src="Box_Type2_4.jpg" onclick="event.stopPropagation(); openGallery(1, 3)">
+        <img src="Box_Type2_5.jpg" onclick="event.stopPropagation(); openGallery(1, 4)">
+        <img src="Box_Type2_6.jpg" onclick="event.stopPropagation(); openGallery(1, 5)">
       </div>
-      <img src="Box_Type2_0.jpg" alt="Moments that Bloom Box">
-      <strong style="color: #ff69b4;"> Moments that Bloom Box </strong><br>
-
-      <strong style="color: #ff69b4;">Price RM85 ☺️</strong><br>
-        
-        📸 16 Photos or Messages<br>
-        🎁 2-Layer Explosion Box<br>
-        🎨 Customizable Colors<br>
-        🎉 Ideal for romantic surprises or special occasions<br>
-      </p>
+      <img src="Box_Type2_0.jpg" alt="Bloom Box">
+      <div style="text-align: center;">
+        <strong style="color:#e2a9b5; font-size: 18px;">Bloom Box | RM80</strong><br><br>
+      </div>
+      <span style="color: #555555; font-size: 16px;">📸 19 Photos or Messages</span><br>
+      <span style="color: #555555; font-size: 16px;">🎁 3-Layer Explosion Box</span><br>
+      <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+      <span style="color: #555555; font-size: 16px;">🌸 Ideal for Celebrations and Cherished Moments</span>
     </div>
 
-    <!-- Minix Box -->
+
+    <!-- Box 3 -->
     <div class="photo-card" onclick="openGallery(2)">
       <div class="thumbnail-row">
         <img src="Box_Type3_1.jpg" onclick="event.stopPropagation(); openGallery(2, 0)">
@@ -165,90 +200,121 @@
         <img src="Box_Type3_3.jpg" onclick="event.stopPropagation(); openGallery(2, 2)">
         <img src="Box_Type3_4.jpg" onclick="event.stopPropagation(); openGallery(2, 3)">
         <img src="Box_Type3_5.jpg" onclick="event.stopPropagation(); openGallery(2, 4)">
+        <img src="Box_Type3_6.jpg" onclick="event.stopPropagation(); openGallery(2, 5)">
       </div>
-      <img src="Box_Type3_0.jpg" alt="Minix Box">
-        <p><strong>Price: RM85 ☺️</strong><br>
-          📸 Includes 16 Photos or Messages<br>
-          🎁 2-Layer Explosion Box<br>
-          🎨 Customizable Theme & Colour Scheme<br>
-      </p>
+      <img src="Box_Type3_1.jpg" alt="Minix Box">
+      <div style="text-align: center;">
+        <strong style="color:#e2a9b5; font-size: 18px;">Minix Box</strong><br>
+        <strong style="color:#e2a9b5; font-size: 18px;">RM26 -> Mini | RM38 -> Normal</strong><br><br>
+      </div>
+      <span style="color: #555555; font-size: 16px;">📸 8 Photos or Messages</span><br>
+      <span style="color: #555555; font-size: 16px;">❤️ Mini Box - 7cm x 7cm x 7cm</span><br>
+      <span style="color: #555555; font-size: 16px;">❤️ Normal Box - 10cm x 10cm x 10cm</span><br>
+      <span style="color: #555555; font-size: 16px;">💌 1 Short Wishes for middle</span><br>
+      <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+      <span style="color: #555555; font-size: 16px;">💕 Made to Brighten Any Occasion</span><br>
     </div>
 
-    <!-- Box 4 -->
-    <div class="photo-card" onclick="openGallery(3)">
-      <div class="thumbnail-row">
-        <img src="Box_Type4_1.jpg" onclick="event.stopPropagation(); openGallery(3, 0)">
-        <img src="Box_Type4_2.jpg" onclick="event.stopPropagation(); openGallery(3, 1)">
-        <img src="Box_Type4_3.jpg" onclick="event.stopPropagation(); openGallery(3, 2)">
-      </div>
-      <img src="Box_Type4_0.jpg" alt="Explosion Box 4">
-      <p><strong>Price RM50 ☺️</strong><br>
-        🎈 24 Customizable Pictures<br>
-        🎈 LED Light<br>
-        🎈 Customizable Colors<br><br>
-        📦 RM 8 (Postage in Malaysia)
-      </p>
-    </div>
 
-    <!-- Box 5 -->
-    <div class="photo-card" onclick="openGallery(4)">
-      <div class="thumbnail-row">
-        <img src="Box_Type5_1.jpg" onclick="event.stopPropagation(); openGallery(4, 0)">
-        <img src="Box_Type5_2.jpg" onclick="event.stopPropagation(); openGallery(4, 1)">
-        <img src="Box_Type5_3.jpg" onclick="event.stopPropagation(); openGallery(4, 2)">
-      </div>
-      <img src="Box_Type5_0.jpg" alt="Explosion Box 5">
-      <p><strong>Price RM50 ☺️</strong><br>
-        🎈 24 Customizable Pictures<br>
-        🎈 LED Light<br>
-        🎈 Customizable Colors<br><br>
-        📦 RM 8 (Postage in Malaysia)
-      </p>
+   <!-- Box 4 -->
+   <div class="photo-card" onclick="openGallery(3)">
+    <div class="thumbnail-row">
+      <img src="Box_Type4_1.jpg" onclick="event.stopPropagation(); openGallery(3, 0)">
+      <img src="Box_Type4_2.jpg" onclick="event.stopPropagation(); openGallery(3, 1)">
+      <img src="Box_Type4_3.jpg" onclick="event.stopPropagation(); openGallery(3, 2)">
+      <img src="Box_Type4_4.jpg" onclick="event.stopPropagation(); openGallery(3, 3)">
+      <img src="Box_Type4_5.jpg" onclick="event.stopPropagation(); openGallery(3, 4)">
     </div>
+    <img src="Box_Type4_1.jpg" alt="Diamond Box">
+    <div style="text-align: center;">
+      
+      <strong style="color:#e2a9b5; font-size: 18px;">Diamond Box | RM85</strong><br><br>
+    </div>
+    <span style="color: #555555; font-size: 16px;">📸 12-15 Photos or Messages</span><br>
+    <span style="color: #555555; font-size: 16px;">🍫 Dairy Milk + Ferrero Rocher</span><br>
+    <span style="color: #555555; font-size: 16px;">💡 Fairy light</span><br>
+    <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+    <span style="color: #555555; font-size: 16px;">🌸 A Heartfelt Touch for Any Celebration</span><br>
   </div>
 
-  <!-- Hidden Heart Box - blue heart -->
-  <div class="photo-card" onclick="openGallery(4)">
+   <!-- Box 5-->
+   <div class="photo-card" onclick="openGallery(4)">
     <div class="thumbnail-row">
       <img src="Box_Type5_1.jpg" onclick="event.stopPropagation(); openGallery(4, 0)">
       <img src="Box_Type5_2.jpg" onclick="event.stopPropagation(); openGallery(4, 1)">
       <img src="Box_Type5_3.jpg" onclick="event.stopPropagation(); openGallery(4, 2)">
+      <img src="Box_Type5_4.jpg" onclick="event.stopPropagation(); openGallery(4, 3)">
     </div>
-    <img src="Box_Type5_0.jpg" alt="Hidden Heart Box">
-    <p><strong>Price RM50 ☺️</strong><br>
-      📸 16 Photos or Messages<br>
-      🎁 2-Layer Explosion Box<br>
-      🎨 Customizable Colors<br>
-      🎉 Ideal for romantic surprises or special occasions<br>
-    </p>
+    <img src="Box_Type5_1.jpg" alt="TwinkleGift Box">
+    <div style="text-align: center;">
+      <strong style="color:#e2a9b5; font-size: 18px;">TwinkleGift Box | RM42</strong><br><br>
+    </div>
+    <span style="color: #555555; font-size: 16px;">📸 7 Photos or Messages</span><br>
+    <span style="color: #555555; font-size: 16px;">💡 Fairy light</span><br>
+    <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+    <span style="color: #555555; font-size: 16px;">✨ Designed to Surprise and Delight</span><br>
+  </div>
+
+    <!-- Box 6-->
+    <div class="photo-card" onclick="openGallery(5)">
+      <div class="thumbnail-row">
+        <img src="Box_Type6_1.jpg" onclick="event.stopPropagation(); openGallery(5, 0)">
+        <img src="Box_Type6_2.jpg" onclick="event.stopPropagation(); openGallery(5, 1)">
+        <img src="Box_Type6_3.jpg" onclick="event.stopPropagation(); openGallery(5, 2)">
+        <img src="Box_Type6_4.jpg" onclick="event.stopPropagation(); openGallery(5, 3)">
+        <img src="Box_Type6_5.jpg" onclick="event.stopPropagation(); openGallery(5, 4)">
+      </div>
+      <img src="Box_Type6_1.jpg" alt="JoyBurst Box">
+      <div style="text-align: center;">
+        <strong style="color:#e2a9b5; font-size: 18px;">JoyBurst Box | RM87</strong><br><br>
+      </div>
+      <span style="color: #555555; font-size: 16px;">📸 18  Photos or Messages</span><br>
+      <span style="color: #555555; font-size: 16px;">🎁 3-Layer Explosion Box</span><br>
+      <span style="color: #555555; font-size: 16px;">🍫 Ferrero Rocher</span><br>
+      <span style="color: #555555; font-size: 16px;">🌸 Soap Rose</span><br>
+      <span style="color: #555555; font-size: 16px;">💌 6 Short Wishes for middle</span><br>
+      <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+      <span style="color: #555555; font-size: 16px;">💫 Make Every Moment Extra Special</span><br>
+    </div>
+
+   <!-- Box 7-->
+   <div class="photo-card" onclick="openGallery(6)">
+    <div class="thumbnail-row">
+      <img src="Box_Type7_1.jpg" onclick="event.stopPropagation(); openGallery(6, 0)">
+      <img src="Box_Type7_2.jpg" onclick="event.stopPropagation(); openGallery(6, 1)">
+      <img src="Box_Type7_3.jpg" onclick="event.stopPropagation(); openGallery(6, 2)">
+      <img src="Box_Type7_4.jpg" onclick="event.stopPropagation(); openGallery(6, 3)">
+      <img src="Box_Type7_5.jpg" onclick="event.stopPropagation(); openGallery(6, 4)">
+    </div>
+    <img src="Box_Type7_1.jpg" alt="Tower Box">
+    <div style="text-align: center;">
+      <strong style="color:#e2a9b5; font-size: 18px;">Tower Box | RM120</strong><br><br>
+    </div>
+    <span style="color: #555555; font-size: 16px;">📸 24 Photos or Messages</span><br>
+    <span style="color: #555555; font-size: 16px;">💡 2 Fairy light</span><br>
+    <span style="color: #555555; font-size: 16px;">🎨 Customizable Colour Theme</span><br>
+    <span style="color: #555555; font-size: 16px;">🌟 Crafted to Spark Smiles & Surprises</span><br>
   </div>
 </div>
 
- <!-- Love in Layers - orange multiple layer -->
-<div class="photo-card" onclick="openGallery(4)">
-  <div class="thumbnail-row">
-    <img src="Box_Type5_1.jpg" onclick="event.stopPropagation(); openGallery(4, 0)">
-    <img src="Box_Type5_2.jpg" onclick="event.stopPropagation(); openGallery(4, 1)">
-    <img src="Box_Type5_3.jpg" onclick="event.stopPropagation(); openGallery(4, 2)">
-  </div>
-  <img src="Box_Type5_0.jpg" alt="Hidden Heart Box">
-  <p><strong>Price RM50 ☺️</strong><br>
-    📸 16 Photos or Messages<br>
-    🎁 2-Layer Explosion Box<br>
-    🎨 Customizable Colors<br>
-    🎉 Ideal for romantic surprises or special occasions<br>
-  </p>
-</div>
+
+
+<div class="controls">
+  <button class="pink-back-button" onclick="backToMain()">Back</button>
 </div>
 
 
-  <!-- Lightbox -->
+
+
+
+
+  <!-- Lightbox Modal -->
   <div class="lightbox" id="lightbox">
-    <img id="lightboxImage" src="" alt="Large View">
+    <img id="lightboxImage" src="" alt="Box Preview">
     <div class="controls">
-      <button onclick="prevImage()">⏮ Prev</button>
-      <button onclick="closeLightbox()">❌ Close</button>
-      <button onclick="nextImage()">Next ⏭</button>
+      <button onclick="prevImage()">⟨ Prev</button>
+      <button onclick="closeLightbox()">Close</button>
+      <button onclick="nextImage()">Next ⟩</button>
     </div>
   </div>
 
@@ -257,38 +323,90 @@
   </div>
 
   <script>
+    function backToMain() {
+  window.location.href = "index.html";  
+}
+
     const galleries = [
-      ["type1_1.jpeg", "type1_2.jpeg", "type1_1c.jpeg"],
-      ["Box_Type2_1.jpg", "Box_Type2_2.jpg", "Box_Type2_3.jpg", "Box_Type2_4.jpg"],
-      ["Box_Type3_1.jpg", "Box_Type3_2.jpg", "Box_Type3_3.jpg", "Box_Type3_4.jpg", "Box_Type3_5.jpg"],
-      ["Box_Type4_1.jpg", "Box_Type4_2.jpg", "Box_Type4_3.jpg"],
-      ["Box_Type5_1.jpg", "Box_Type5_2.jpg", "Box_Type5_3.jpg"]
+      [
+        "Box_Type1_1.jpg",
+        "Box_Type1_2.jpg",
+        "Box_Type1_3.jpg",
+        "Box_Type1_4.jpg",
+        "Box_Type1_6.jpg"
+      ],
+      [
+        "Box_Type2_1.jpg",
+        "Box_Type2_2.jpg",
+        "Box_Type2_3.jpg",
+        "Box_Type2_4.jpg",
+        "Box_Type2_5.jpg",
+        "Box_Type2_6.jpg"
+
+      ],
+      [
+        "Box_Type3_1.jpg",
+        "Box_Type3_2.jpg",
+        "Box_Type3_3.jpg",
+        "Box_Type3_4.jpg",
+        "Box_Type3_5.jpg",
+        "Box_Type3_6.jpg"
+      ],
+      [
+        "Box_Type4_1.jpg",
+        "Box_Type4_2.jpg",
+        "Box_Type4_3.jpg",
+        "Box_Type4_4.jpg",
+        "Box_Type4_5.jpg"
+      ],
+      [
+        "Box_Type5_1.jpg",
+        "Box_Type5_2.jpg",
+        "Box_Type5_3.jpg",
+        "Box_Type5_4.jpg",
+        "Box_Type5_5.jpg"
+      ],
+      [
+        "Box_Type6_1.jpg",
+        "Box_Type6_2.jpg",
+        "Box_Type6_3.jpg",
+        "Box_Type6_4.jpg",
+        "Box_Type6_5.jpg"
+      ],
+      [
+        "Box_Type7_1.jpg",
+        "Box_Type7_2.jpg",
+        "Box_Type7_3.jpg",
+        "Box_Type7_4.jpg",
+        "Box_Type7_5.jpg"
+      ]
     ];
 
     let currentGallery = 0;
-    let currentImage = 0;
+    let currentIndex = 0;
 
     function openGallery(galleryIndex, imageIndex = 0) {
       currentGallery = galleryIndex;
-      currentImage = imageIndex;
-      document.getElementById('lightboxImage').src = galleries[galleryIndex][imageIndex];
-      document.getElementById('lightbox').style.display = 'flex';
+      currentIndex = imageIndex;
+      const lightbox = document.getElementById("lightbox");
+      const img = document.getElementById("lightboxImage");
+      img.src = galleries[galleryIndex][imageIndex];
+      lightbox.style.display = "flex";
     }
 
     function closeLightbox() {
-      document.getElementById('lightbox').style.display = 'none';
-    }
-
-    function nextImage() {
-      currentImage = (currentImage + 1) % galleries[currentGallery].length;
-      document.getElementById('lightboxImage').src = galleries[currentGallery][currentImage];
+      document.getElementById("lightbox").style.display = "none";
     }
 
     function prevImage() {
-      currentImage = (currentImage - 1 + galleries[currentGallery].length) % galleries[currentGallery].length;
-      document.getElementById('lightboxImage').src = galleries[currentGallery][currentImage];
+      currentIndex = (currentIndex - 1 + galleries[currentGallery].length) % galleries[currentGallery].length;
+      document.getElementById("lightboxImage").src = galleries[currentGallery][currentIndex];
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % galleries[currentGallery].length;
+      document.getElementById("lightboxImage").src = galleries[currentGallery][currentIndex];
     }
   </script>
-
 </body>
 </html>
